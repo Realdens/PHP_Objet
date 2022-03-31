@@ -8,6 +8,18 @@
 </head>
 <body>
 
+            <?php if (isset($_GET["valide"])) { ?>
+                <div class="alert alert-success" role="alert">
+                    Valide
+                </div>
+            <?php } ?>
+
+            <?php if (isset($_GET["invalide"])) { ?>
+                <div class="alert alert-success" role="alert">
+                    invalide
+                </div>
+            <?php } ?>
+
             <form action="traitement.php" method="post">
                 <div>
                     <label for="bankcode">Code banque</label>
