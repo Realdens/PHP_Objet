@@ -13,7 +13,7 @@
     <?php
         function my_var_dump($var) {
             echo "<pre style='background-color: orange; border: 2px solid black'>";
-            var_dump($var);
+            print_r($var);
             echo "</pre>";
         }
 
@@ -50,8 +50,10 @@
 
     <?php
         include_once("admin.class.php");
-        $admin1 = new Admin("Admin1", "admin@mail.com", "ADM");
-        my_var_dump($admin1);
+        $admin = new Admin("Admin1", "admin@mail.com", "ADM");
+        my_var_dump($admin);
+        $admin->supprimerUser($user2)
+
     ?>
 </body>
 </html>
